@@ -32,3 +32,81 @@ button.dropdown-btn,
 .show {
   display: block;
 }
+
+img {
+  width: 100%;
+}
+
+.carousel-item {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+}
+
+.left-arrow,
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  border: none;
+  font-size: 2rem;
+  color: white;
+  background-color: black;
+  opacity: 0.4;
+  padding: 5px 10px;
+  transition: opacity 300ms;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+  opacity: 0.8;
+}
+
+.right-arrow {
+  right: 0;
+}
+
+.nav-dots {
+  background-color: rgba(0, 0, 0, 40%);
+  display: flex;
+  gap: 10px;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: 300ms;
+}
+
+.nav-dots:hover {
+  background-color: rgba(0, 0, 0, 80%);
+}
+
+.nav-dot-btn {
+  border: none;
+  background-color: white;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  opacity: 0.4;
+  transition: 300ms;
+}
+
+.nav-dot-btn:hover {
+  opacity: 0.8;
+}
+
+.active-dot {
+  opacity: 0.8;
+  width: 25px;
+  border-radius: 25px;
+}
